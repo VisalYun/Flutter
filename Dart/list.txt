@@ -1,0 +1,12 @@
+//list
+void main() {
+  List<String> name = ['Ryuk', 'Ken', 'Chun li'];
+  print("Actual list: $name");
+  
+  name.add('Akuma');
+  //error, if the List isn't specify its type :name.add(19);
+  print("After appending: $name");
+  
+  name.remove('Ken');
+  print("After removing: $name");
+}

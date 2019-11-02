@@ -1,0 +1,20 @@
+//function
+void main() {
+  String greet = greeting();
+  String name = getName();
+  int age = getAge();
+  print(greet);
+  print(name);
+  print(age);
+}
+
+String greeting(){
+  return 'hello';
+}
+
+int getAge(){
+  return 19;
+}
+
+//arrow function
+String getName() => 'Visal';

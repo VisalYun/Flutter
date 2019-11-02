@@ -1,0 +1,36 @@
+//inheritance
+void main() {
+  VIP userOne = VIP('Visal', 19);
+  print(userOne.username);
+  print(userOne.age);
+  userOne.login();
+  userOne.discount();
+  
+  User userTwo = User('Chea', 17);
+  print(userTwo.username);
+  print(userTwo.age);
+  userTwo.login();
+}
+
+class User{
+  String username;
+  int age;
+  
+  User(String username, int age){
+    this.username = username;
+    this.age = age;
+  }
+  
+  void login(){
+    print('user logged in');
+  }
+}
+
+class VIP extends User{
+  //call the parent class contructor
+  VIP(String username, int age): super(username, age);
+  
+  void discount(){
+    print("Discount 30%");
+  }
+}

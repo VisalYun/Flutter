@@ -1,0 +1,18 @@
+//variable
+void main() {
+  //all the variable here is static type variable
+  int age = 30;
+  print(age);
+  
+  String name = 'dart';
+  //error: name = 30;
+  print(name);
+  
+  bool isNight = false;
+  print(isNight);
+  
+  //if you want your variable to be dynamic
+  dynamic lname = 'dart';
+  lname = 30;
+  print(lname);
+}

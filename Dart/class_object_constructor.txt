@@ -1,0 +1,28 @@
+//class, object, constructor
+void main() {
+  //object
+  User userOne = User('Visal', 19);
+  print(userOne.username);
+  print(userOne.age);
+  userOne.login();
+  
+  User userTwo = User('Chea', 17);
+  print(userTwo.username);
+  print(userTwo.age);
+  userTwo.login();
+}
+
+class User{
+  String username;
+  int age;
+  
+  //constructor
+  User(String username, int age){
+    this.username = username;
+    this.age = age;
+  }
+  
+  void login(){
+    print('user logged in');
+  }
+}
